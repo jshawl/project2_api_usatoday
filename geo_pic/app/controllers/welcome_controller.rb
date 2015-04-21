@@ -1,13 +1,26 @@
+# require 'flickraw'
+require 'httparty'
+
 class WelcomeController < ApplicationController
 
   def index
   end
 
-  # def search
-  #   search_array = params[:search].split(' ')
-  #   search_array.join('+')
-  #   @flikr_search = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.places.find&api_key=e81306643b01d75c37c5e14f3d0ca1ab&query=#{params[:search]}&format=rest&api_sig=4d135b550bd716353d4ec0c07f953e19")
-  # end
+  def search
+
+
+    # FlickRaw.api_key="04984bb3307b34805b31d3230a5c5b31"
+    # FlickRaw.shared_secret="5fc20f0dcb83e30d"
+    # flickr.places.find(params[:search])
+
+
+
+  @search = params[:search]
+  @api_call = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.places.find&api_key=04984bb3307b34805b31d3230a5c5b31=#{@search}")
+
+
+  end
+
 
 
 end
