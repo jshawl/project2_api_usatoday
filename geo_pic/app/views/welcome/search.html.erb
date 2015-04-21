@@ -6,9 +6,9 @@
 
 
 
-
-  <%= image_tag "https://farm#{@farm_id}.staticflickr.com/#{@server_id}/#{@id}_#{@secret}_m.jpg" %>
-
+<% @photos.each do |pic| %>
+  <img src="https://farm<%= pic["farm"].to_s %>.staticflickr.com/<%= pic["server"] %>/<%= pic["id"] %>_<%= pic["secret"] %>_z.jpg">
+<% end %>
 
 
 </p>
