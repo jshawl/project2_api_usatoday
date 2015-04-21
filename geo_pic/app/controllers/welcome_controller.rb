@@ -22,13 +22,9 @@ class WelcomeController < ApplicationController
 
 
 def search
-  @search = params[:search]
-
-    @farm_id = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31#{@search}&format=json&nojsoncallback=1").parsed_response["photos"]["photo"]["farm"]
-    @server_id = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31#{@search}&format=json&nojsoncallback=1").parsed_response["photos"]["photo"]["server"]
-    @id = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31#{@search}&format=json&nojsoncallback=1").parsed_response["photos"]["photo"]["id"]
-    @secret = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31#{@search}&format=json&nojsoncallback=1").parsed_response["photos"]["photo"]["secret"]
-  end
+  search_results = HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31&tags=#{params[:search]}&format=rest").parsed_response["rsp"]["photos"]["photo"]
+  @photos = search_results.first(20)
+end
 
 
 
