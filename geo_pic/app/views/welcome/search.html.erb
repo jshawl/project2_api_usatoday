@@ -1,0 +1,11 @@
+<h2>Search Results for City</h2>
+
+<p>Interactive map with pictures, would be ideal</p>
+
+<p>
+  <% @flikr_search["places"].each do |pic| %>
+    <img src="<%= pic["place"]["timezone"] %>">
+  <% end %>
+
+
+</p>
