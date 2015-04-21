@@ -5,20 +5,10 @@
 
 <br>
 
-<%= link_to "Delete Place", place_path(@place), method: :delete, confirm: true%>
 
+<%= link_to "Delete This Place From My Favorites List", place_path(@place), method: :delete, confirm: true%>
 
-<h3>Photos</h3>
-
-
-<% @place.photos.each do |photo| %>
-<div class="photo">
-  <img src= "<%=photo.flickr_id %>">
-</div>
-
-
+<br>
 <%= link_to "My Favorite Places", places_path %>
 
-
-
-<% end %>
+<h3>Photos</h3>

@@ -13,7 +13,11 @@ class PlacesController < ApplicationController
     @place = Place.create(:location => params[:search])
   end
 
-
+  def destroy
+    @place = Place.find(params[:id])
+    @place.destroy
+    redirect_to places_path
+  end
 
 
 end
