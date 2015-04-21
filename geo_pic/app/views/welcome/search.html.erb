@@ -3,6 +3,15 @@
 <p>Interactive map with pictures, would be ideal</p>
 
 <p>
+  <%= form_tag '/places', method: :post do %>
+    <%= hidden_field_tag(:search, params[:search]) %>
+    <%= submit_tag 'Save This Location' %>
+  <% end %>
+</p>
+
+
+
+<p>
 
 
 

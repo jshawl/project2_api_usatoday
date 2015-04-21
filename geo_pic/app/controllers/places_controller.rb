@@ -9,5 +9,11 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
   end
 
+  def create
+    @place = Place.create(:location => params[:search])
+  end
+
+
+
 
 end
