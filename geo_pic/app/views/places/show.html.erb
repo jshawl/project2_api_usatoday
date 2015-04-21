@@ -1,0 +1,25 @@
+
+
+<h2><%= @place.location %></h2>
+
+
+<br>
+
+<%= link_to "Edit Place", edit_place_path(@place) %>
+<%= link_to "Delete Place", place_path(@place), method: :delete, confirm: true%>
+
+
+<h3>Photos</h3>
+
+
+<% @place.photos.each do |photo| %>
+<div class="photo">
+  <img src= "<%=photo.flickr_id %>">
+</div>
+
+
+<%= link_to "Home", places_path %>
+
+
+
+<% end %>
