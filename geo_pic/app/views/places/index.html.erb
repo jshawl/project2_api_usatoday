@@ -1,0 +1,10 @@
+<h2>My Favorite Places</h2>
+
+<ul>
+
+<% @places.each do |place| %>
+
+  <li><%= link_to place.location, place_path(place)  %></li>
+
+<% end %>
+</ul>
