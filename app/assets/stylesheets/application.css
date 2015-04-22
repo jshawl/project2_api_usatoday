@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 @import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
@@ -57,9 +57,9 @@ li {
 }
 
 nav {
-	
+
 	color: white;
-	
+
 }
 
 a {
@@ -96,19 +96,13 @@ a {
 	border: none;
 }
 
-.user_login a { 
-	
+.user_login a {
+
 }
 
 .logoHome {
-<<<<<<< HEAD:app/assets/stylesheets/application.css
-	width: 50px;
-	height: 50px;
-}
 
-=======
 	float: left;
 	margin: 0 20px;
 	height: 50px;
 }
->>>>>>> ea8f3c9711d20a6210bbe9e7ed0051f0e4be0672:geo_pic/app/assets/stylesheets/application.css
