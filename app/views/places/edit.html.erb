@@ -1,18 +1,18 @@
 <h2> Editing A Place </h2>
 
 <% if @place.errors.any? %>
-<ul>
-<% @place.errors.full_messages.each do |error| %>
-<li> <%= error %></li>
-<%end%>
-</ul>
+  <ul>
+  <% @place.errors.full_messages.each do |error| %>
+    <li> <%= error %></li>
+  <%end%>
+  </ul>
 <% end %>
 
 <%= form_for @place do |f| %>
 
-<%= f.label :location %>
-<%= f.text_field :location %>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
 
-<%= f.submit %>
+  <%= f.submit %>
 
 <%end %>
