@@ -7761,3 +7761,490 @@ Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.3ms)
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 11:01:38 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 596ms (Views: 573.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 11:01:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-8ec512180fb08ebfa5515b95a518a28021dbcd31beb82479daa5b63e01163dbe.css?body=1" for ::1 at 2015-04-22 11:01:39 -0400
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:01:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (95.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (196.1ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 11:01:42 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `secret_key' for #<WelcomeController:0x007fd9ebfab488>):
+  app/controllers/welcome_controller.rb:24:in `search'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (97.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 11:03:19 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `secret_key' for #<WelcomeController:0x007fd9ef411010>):
+  app/controllers/welcome_controller.rb:24:in `search'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 11:03:56 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 563ms (Views: 37.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.self-8ec512180fb08ebfa5515b95a518a28021dbcd31beb82479daa5b63e01163dbe.css?body=1" for ::1 at 2015-04-22 11:03:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-22 11:03:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-22 11:03:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-22 11:03:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-22 11:03:57 -0400
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:03:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (281.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (122.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 11:04:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:04:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (41.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=kansas+city&commit=Search" for ::1 at 2015-04-22 11:04:04 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"kansas city", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 489ms (Views: 49.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:04:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (182.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (44.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 11:04:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:04:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (118.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 11:05:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 46ms (Views: 40.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:05:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (94.1ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=san+diego&commit=Search" for ::1 at 2015-04-22 11:05:08 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"san diego", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 615ms (Views: 25.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:05:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (28.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (247.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (3.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.5ms)
+
+
+Started POST "/places" for ::1 at 2015-04-22 11:05:11 -0400
+Processing by PlacesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9ndVTRSoT2A2cr7JRTFbTofPa+jW6+ycMsi8Yr1wV0eW8wc7j4hFQ2jhngsnB/RuK9HtKYUBSmRO41dgUWKKjw==", "search"=>"san diego", "commit"=>"Save This Location"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "places" ("location") VALUES ($1) RETURNING "id"  [["location", "san diego"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  Rendered places/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 22.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 11:05:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (94.3ms)
