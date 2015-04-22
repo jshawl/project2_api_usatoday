@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @places = Place.all
+
   end
 
 
