@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GeoPic</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>GeoPic</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  
+  <body>
 
-    <nav>
-      <h2><ul>
-        <li><a class='logoHome' href='/'><%= image_tag("Geopic_logo.png", :size => "50x50") %></a></li> 
-        <li><%= form_tag '/search', method: :get do %>
-            <%= text_field_tag :search, nil, :class => 'searchBox' %>
-            <%= submit_tag 'Search', class: 'button' %>
-            <% end %>
-        </li>
-        <li> <div class='user_login'>
-            <% if current_user %>
-              <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
-            <% else %>
-            <a class='signIn' href='/users/sign_in'>Sign In</a>
-            <% end %>
-          </div>
-        </li>
-      </h2></ul>
-      
+    <!-- Logo should be inside the navigation area and floats right next to the ul list below. -->
+    <header>
+      <%= link_to image_tag("Geopic_logo.png", :class => "logoHome"), root_path %>
+        <nav>
+          <ul>
+            <li>
+              <%= form_tag '/search', method: :get do %>
+              <%= text_field_tag :search, nil, :class => 'searchBox' %>
+              <%= submit_tag 'Search', class: 'button' %>
+              <% end %>
+            </li>
+            <li>
+            <%= link_to "Profile", users_path %>
+            </li>
+            <li> 
+              <span class='user_login'>
+                <% if current_user %>
+                  <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+                <% else %>
+                <a href='/users/sign_in'>Sign In</a>
+                <% end %>
+              </span>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+      <%= yield %>
+    </div>
 
-      
-      
-    </nav>
-  <%= yield %>
-
-</body>
+  </body>
 </html>
