@@ -18,6 +18,8 @@ class WelcomeController < ApplicationController
   # @search = params[:search]
   # @api_call= HTTParty.get("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=04984bb3307b34805b31d3230a5c5b31&tags=#{@search}&format=rest")
 
+  secret_key = ENV['secret_key']
+
 
 
 
