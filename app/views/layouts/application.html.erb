@@ -10,7 +10,7 @@
 
     <nav>
       <h2><ul>
-        <li><a href='/'>Geo.Pic</a></li> 
+        <li><a class='logoHome' href='/'><%= image_tag("Geopic_logo.png", :size => "50x50") %></a></li> 
         <li><%= form_tag '/search', method: :get do %>
             <%= text_field_tag :search, nil, :class => 'searchBox' %>
             <%= submit_tag 'Search', class: 'button' %>
