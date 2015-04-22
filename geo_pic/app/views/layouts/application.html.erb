@@ -7,24 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav>
 
-  <a href='/'>Geo.Pic</a>
+    <nav>
+      <h2><ul>
+        <li><a href='/'>Geo.Pic</a></li> 
+        <li><%= form_tag '/search', method: :get do %>
+            <%= text_field_tag :search, nil, :class => 'searchBox' %>
+            <%= submit_tag 'Search', class: 'button' %>
+            <% end %>
+        </li>
+        <li> <div class='user_login'>
+            <% if current_user %>
+              <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+            <% else %>
+            <a class='signIn' href='/users/sign_in'>Sign In</a>
+            <% end %>
+          </div>
+        </li>
+      </h2></ul>
+      
 
-  <%= form_tag '/search', method: :get do %>
-    <%= text_field_tag :search %>
-    <%= submit_tag 'Search' %>
-  <% end %>
-
-  <% if current_user %>
-    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
-  <% else %>
-  <a href='/users/sign_in'>Sign In</a>
-  <% end %>
-
-</nav>
-
-<%= yield %>
+      
+      
+    </nav>
+  <%= yield %>
 
 </body>
 </html>
