@@ -12,9 +12,8 @@
  *
  *= require_tree .
  *= require_self
- // app/assets/stylesheets/application.css.sass
-
  */
+
 @import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
@@ -36,25 +35,41 @@ body {
 }
 
 
-ul li {
-	display: inline-block;
-	list-style-type: none;
-}
-
-nav {
-	
+header {
+	height: 50px;
 	background: -webkit-linear-gradient(#FF0066, #800033); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(#FF0066, #800033); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(#FF0066, #800033); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(#FF0066, #800033); /* Standard syntax */
+	border-bottom: 2px solid black;
+}
+
+ul {
+	margin: 0;
+	float: none;
+}
+
+li {
+	margin: auto 10px;
+	display: inline-block;
+	list-style: none;
+	font-size: 25px;
+}
+
+nav {
+
 	color: white;
-	height: 50px;
+
 }
 
 a {
 	color: #00FFFF;
 	font-family: 'Indie Flower', cursive;
 	text-decoration: none;
+}
+
+.content {
+	margin: 20px;
 }
 
 .searchBox {
@@ -66,28 +81,28 @@ a {
 	color: white;
 	box-shadow: inset 3px 3px 3px black;
 	border: 2px solid black;
-	border-radius: 10px;
 	background: -webkit-linear-gradient(#00FFFF, #3366CC); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(#00FFFF, #3366CC); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(#00FFFF, #3366CC); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(#00FFFF, #3366CC); /* Standard syntax */
+  	outline: 0;
 }
 
 .button {
-	background-color: grey;
+	background: none;
 	width: 70px;
 	height: 30px;
 	font-size: 16px;
 	border: none;
 }
 
-.signIn { 
-	color: white;
-	right: 100px;
+.user_login a {
+
 }
 
 .logoHome {
-	width: 50px;
+
+	float: left;
+	margin: 0 20px;
 	height: 50px;
 }
-
