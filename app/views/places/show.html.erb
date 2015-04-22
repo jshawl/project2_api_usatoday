@@ -12,4 +12,4 @@
 <br>
 <%= link_to "My Favorite Locations", places_path %>
 
-<h3>View Photos For This Place:</h3>
+<a href="/search?utf8=✓&search=<%= @place.location.gsub(/\s/,'+') %>&commit=Search"><h3>View Photos For This Place:</h3></a>
