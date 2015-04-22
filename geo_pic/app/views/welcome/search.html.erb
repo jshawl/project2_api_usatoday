@@ -3,9 +3,10 @@
 <p>Interactive map with pictures, would be ideal</p>
 
 <p>
-  <%= form_tag '/places', method: :post do %>
+  <%= form_tag '/search', method: :post do %>
     <%= hidden_field_tag(:search, params[:search]) %>
-    <%= submit_tag 'Save This Location' %>
+    <%= submit_tag 'Save to Favorites', data: { confirm: "Saved to Favorite Places!" } %>
+
   <% end %>
 </p>
 
