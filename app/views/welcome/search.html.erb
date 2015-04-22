@@ -1,4 +1,4 @@
-<h2>Search Results for <%= params[:search].capitalize%></h2>
+<h2>Search Results for <%= params[:search].split.map(&:capitalize).join(' ')%></h2>
 
   <%= form_tag '/places', method: :post do %>
     <%= hidden_field_tag(:search, params[:search]) %>

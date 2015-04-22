@@ -1,15 +1,15 @@
 
 
-<h2><%= @place.location %></h2>
+<h2><%= @place.location.split.map(&:capitalize).join(' ') %></h2>
 
 
 <br>
 
-<%= link_to "Edit This Place", edit_place_path(@place) %>
+<%= link_to "Change Location", edit_place_path(@place) %>
 <br>
-<%= link_to "Delete This Place From My Favorites List", place_path(@place), method: :delete, confirm: true%>
+<%= link_to "Delete From Favorites", place_path(@place), method: :delete, confirm: true%>
 
 <br>
-<%= link_to "My Favorite Places", places_path %>
+<%= link_to "My Favorite Locations", places_path %>
 
 <h3>View Photos For This Place:</h3>
