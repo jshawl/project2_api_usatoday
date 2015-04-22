@@ -10237,3 +10237,607 @@ ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"
   Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (412.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 12:09:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 267ms (Views: 247.6ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:09:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (403.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (2.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (104.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (226.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:10:03 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+Completed 500 Internal Server Error in 629ms (ActiveRecord: 0.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): [{"id"=>"17233911832", "owner"=>"26401289@N04", "secret"=>"ddea0892a4", "server"=>"8735", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 12:09:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17048060620", "owner"=>"62991404@N06", "secret"=>"5477579c94", "server"=>"8799", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 11:04:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17049419239", "owner"=>"26401289@N04", "secret"=>"f66e0d546e", "server"=>"7630", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 12:04:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615356433", "owner"=>"62991404@N06", "secret"=>"bff93b138d", "server"=>"8752", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 10:59:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209599296", "owner"=>"26401289@N04", "secret"=>"a279958d64", "server"=>"5450", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 11:59:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234965561", "owner"=>"62991404@N06", "secret"=>"7839423a72", "server"=>"7706", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:54:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235515295", "owner"=>"26401289@N04", "secret"=>"465cd0c17c", "server"=>"5443", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 11:54:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234921791", "owner"=>"62991404@N06", "secret"=>"c8445a633f", "server"=>"8816", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 10:49:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047927370", "owner"=>"26401289@N04", "secret"=>"b9d8403909", "server"=>"7711", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 11:49:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047666238", "owner"=>"62991404@N06", "secret"=>"530563ca71", "server"=>"5457", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 10:44:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047662428", "owner"=>"26401289@N04", "secret"=>"a2c0bef3a5", "server"=>"8763", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 11:44:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209464866", "owner"=>"131651237@N02", "secret"=>"a05e1bbcfa", "server"=>"7678", "farm"=>"8", "title"=>"it's Foggy   #newyork #newyorkcity #nyc #lookingupatbuildings", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235422755", "owner"=>"124711449@N05", "secret"=>"8c049e38dd", "server"=>"7683", "farm"=>"8", "title"=>"Eastman Theatre", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234848711", "owner"=>"131651237@N02", "secret"=>"63e1e06170", "server"=>"7592", "farm"=>"8", "title"=>"Spring in Newyork  #Newyork #spring #nyc", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235403205", "owner"=>"131651237@N02", "secret"=>"8be260af49", "server"=>"7669", "farm"=>"8", "title"=>"Spring in Newyork  #Newyork #spring #nyc", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234837901", "owner"=>"35603603@N03", "secret"=>"224872b913", "server"=>"5345", "farm"=>"6", "title"=>"Empire State", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027957767", "owner"=>"62991404@N06", "secret"=>"0d2df15780", "server"=>"7625", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:39:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027898417", "owner"=>"85415832@N00", "secret"=>"eca5f72965", "server"=>"7596", "farm"=>"8", "title"=>"orphan asylum memorial", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612937484", "owner"=>"26401289@N04", "secret"=>"c7436e2d7b", "server"=>"7661", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 11:39:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047614158", "owner"=>"68672476@N00", "secret"=>"0f5d26fd41", "server"=>"7725", "farm"=>"8", "title"=>"Greater Yellowlegs", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234795641", "owner"=>"32476380@N05", "secret"=>"2d54f4c116", "server"=>"5341", "farm"=>"6", "title"=>"MET", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615140333", "owner"=>"62991404@N06", "secret"=>"c0b735b539", "server"=>"8770", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 10:34:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235340525", "owner"=>"26401289@N04", "secret"=>"8871fa9ea6", "server"=>"7624", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 11:34:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047776510", "owner"=>"50133770@N06", "secret"=>"00bf85665b", "server"=>"8741", "farm"=>"9", "title"=>"Chinatown Store Window", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17049141799", "owner"=>"33616735@N00", "secret"=>"f13799d33d", "server"=>"7648", "farm"=>"8", "title"=>"Marisa", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615118933", "owner"=>"33616735@N00", "secret"=>"93400ff507", "server"=>"8744", "farm"=>"9", "title"=>"Time Square, NY", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612876454", "owner"=>"33616735@N00", "secret"=>"75edb56e7d", "server"=>"7586", "farm"=>"8", "title"=>"Cab Ride", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027891897", "owner"=>"33616735@N00", "secret"=>"6df776142c", "server"=>"7666", "farm"=>"8", "title"=>"Macys", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234767431", "owner"=>"33616735@N00", "secret"=>"f96f72459c", "server"=>"7618", "farm"=>"8", "title"=>"Bethesda Fountain", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612875944", "owner"=>"33616735@N00", "secret"=>"2c443dd289", "server"=>"5470", "farm"=>"6", "title"=>"Central Park , NY", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209364936", "owner"=>"33616735@N00", "secret"=>"fa8530099f", "server"=>"8790", "farm"=>"9", "title"=>"Empire", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233573312", "owner"=>"62991404@N06", "secret"=>"770ffee4d4", "server"=>"7679", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:29:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234671161", "owner"=>"124601318@N05", "secret"=>"43b043abc6", "server"=>"8703", "farm"=>"9", "title"=>"IN or OUT?", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17049119479", "owner"=>"26401289@N04", "secret"=>"24db53f042", "server"=>"8789", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 11:29:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233549552", "owner"=>"64449446@N05", "secret"=>"42e7d7fd7e", "server"=>"8713", "farm"=>"9", "title"=>"Enjoy The View", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027841697", "owner"=>"68063581@N03", "secret"=>"d7da1f4a6d", "server"=>"8817", "farm"=>"9", "title"=>"Too far", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235259985", "owner"=>"62991404@N06", "secret"=>"3961b023e0", "server"=>"7686", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:24:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047708270", "owner"=>"26401289@N04", "secret"=>"59a59c19ef", "server"=>"8747", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 11:24:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615047033", "owner"=>"12045141@N04", "secret"=>"cddf76fe0c", "server"=>"7688", "farm"=>"8", "title"=>"MIKE0360DorianElectra", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027810447", "owner"=>"12045141@N04", "secret"=>"75b62bfc24", "server"=>"7621", "farm"=>"8", "title"=>"MIKE9676b", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047462468", "owner"=>"12045141@N04", "secret"=>"abf04ab59c", "server"=>"7622", "farm"=>"8", "title"=>"wimmr-9299", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612779914", "owner"=>"34199068@N00", "secret"=>"6caae63284", "server"=>"8770", "farm"=>"9", "title"=>"_MG_5813", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235223175", "owner"=>"34199068@N00", "secret"=>"6805041e4e", "server"=>"7623", "farm"=>"8", "title"=>"_MG_5820", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047457498", "owner"=>"34199068@N00", "secret"=>"57003bb1bf", "server"=>"7640", "farm"=>"8", "title"=>"_MG_5829", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047673330", "owner"=>"34199068@N00", "secret"=>"66eec85f5c", "server"=>"7597", "farm"=>"8", "title"=>"_MG_5831", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233491632", "owner"=>"34199068@N00", "secret"=>"f78414d3d2", "server"=>"8800", "farm"=>"9", "title"=>"_MG_5839", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615016583", "owner"=>"34199068@N00", "secret"=>"f8625c75c5", "server"=>"7694", "farm"=>"8", "title"=>"_MG_5840", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612772254", "owner"=>"34199068@N00", "secret"=>"33264d1bdd", "server"=>"8812", "farm"=>"9", "title"=>"_MG_5845", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233487392", "owner"=>"62991404@N06", "secret"=>"d1b36ef733", "server"=>"7689", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:19:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612770194", "owner"=>"34199068@N00", "secret"=>"813ca596ef", "server"=>"8768", "farm"=>"9", "title"=>"_MG_5863", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027783787", "owner"=>"34199068@N00", "secret"=>"44d8420c67", "server"=>"7649", "farm"=>"8", "title"=>"_MG_5866", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047447528", "owner"=>"34199068@N00", "secret"=>"849381c7a3", "server"=>"8723", "farm"=>"9", "title"=>"_MG_5870", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615008733", "owner"=>"34199068@N00", "secret"=>"375ed49391", "server"=>"8755", "farm"=>"9", "title"=>"_MG_5875", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047444278", "owner"=>"34199068@N00", "secret"=>"d04912985c", "server"=>"5468", "farm"=>"6", "title"=>"_MG_5885", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612763844", "owner"=>"34199068@N00", "secret"=>"2bd27aa1e0", "server"=>"7618", "farm"=>"8", "title"=>"_MG_5890", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16615004583", "owner"=>"34199068@N00", "secret"=>"a094d45c56", "server"=>"7625", "farm"=>"8", "title"=>"_MG_5893", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047446668", "owner"=>"26401289@N04", "secret"=>"21bf87490f", "server"=>"7665", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 11:19:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234619461", "owner"=>"62991404@N06", "secret"=>"d7d6764d2a", "server"=>"5463", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 10:14:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209215136", "owner"=>"26401289@N04", "secret"=>"0a90bc7212", "server"=>"7722", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 11:14:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17235155915", "owner"=>"41546366@N02", "secret"=>"499e987f96", "server"=>"8824", "farm"=>"9", "title"=>"AHRC staff", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612710794", "owner"=>"41546366@N02", "secret"=>"0df13a185a", "server"=>"7674", "farm"=>"8", "title"=>"Delta and TSA and PANYNJ", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233427332", "owner"=>"41546366@N02", "secret"=>"d9a2eb75a1", "server"=>"5442", "farm"=>"6", "title"=>"Delta Pilot", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027725097", "owner"=>"41546366@N02", "secret"=>"99a9ae5a57", "server"=>"7597", "farm"=>"8", "title"=>"Families", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047607630", "owner"=>"41546366@N02", "secret"=>"8a37bb81a6", "server"=>"8732", "farm"=>"9", "title"=>"Leigh Ann and Karen", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16614953353", "owner"=>"41546366@N02", "secret"=>"b8b27a693e", "server"=>"7615", "farm"=>"8", "title"=>"Shannon Prohaszka - Taft Foundation and Delta", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047607320", "owner"=>"41546366@N02", "secret"=>"6f79e524eb", "server"=>"5446", "farm"=>"6", "title"=>"TSA", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612681974", "owner"=>"62991404@N06", "secret"=>"ea095024dc", "server"=>"7617", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:09:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209170796", "owner"=>"26401289@N04", "secret"=>"1e02e895f3", "server"=>"5327", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 11:09:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233352702", "owner"=>"62991404@N06", "secret"=>"d37f5ae291", "server"=>"7716", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:04:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047529530", "owner"=>"26401289@N04", "secret"=>"4edeeaae11", "server"=>"8804", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 11:04:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16614832933", "owner"=>"62991404@N06", "secret"=>"f8dc6a9054", "server"=>"7616", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 09:59:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047193108", "owner"=>"62092813@N00", "secret"=>"2695568733", "server"=>"7674", "farm"=>"8", "title"=>"Open society", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16614752423", "owner"=>"62092813@N00", "secret"=>"5619ac0ab6", "server"=>"7712", "farm"=>"8", "title"=>"Into the wild", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209077986", "owner"=>"26401289@N04", "secret"=>"6671019d63", "server"=>"8804", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 10:59:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234442331", "owner"=>"68672476@N00", "secret"=>"da52c2e15a", "server"=>"8816", "farm"=>"9", "title"=>"Horned Grebe", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234991785", "owner"=>"68672476@N00", "secret"=>"8a47d13c06", "server"=>"7620", "farm"=>"8", "title"=>"Red Crossbill", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17209039686", "owner"=>"68672476@N00", "secret"=>"c95ebb17a3", "server"=>"8819", "farm"=>"9", "title"=>"Red Crossbill", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047443720", "owner"=>"68672476@N00", "secret"=>"61881267bc", "server"=>"8698", "farm"=>"9", "title"=>"Red Crossbill", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233263222", "owner"=>"68672476@N00", "secret"=>"b8963b5040", "server"=>"7595", "farm"=>"8", "title"=>"Common Loon", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16614788043", "owner"=>"68672476@N00", "secret"=>"4f4019ce58", "server"=>"7682", "farm"=>"8", "title"=>"Cliff Swallow", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16612543484", "owner"=>"62991404@N06", "secret"=>"b8a391d9b4", "server"=>"5338", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 09:54:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234983015", "owner"=>"26401289@N04", "secret"=>"055a74ec41", "server"=>"7604", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:54:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233213722", "owner"=>"62991404@N06", "secret"=>"f36d20f91f", "server"=>"5331", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 09:49:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17208982876", "owner"=>"11820556@N02", "secret"=>"a6f584a1f9", "server"=>"7651", "farm"=>"8", "title"=>"NYC from ESB", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234384221", "owner"=>"11820556@N02", "secret"=>"1472a10a4c", "server"=>"5456", "farm"=>"6", "title"=>"NYC from ESB", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047170208", "owner"=>"11820556@N02", "secret"=>"e502022a5d", "server"=>"8741", "farm"=>"9", "title"=>"Times Square", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234927205", "owner"=>"47962459@N00", "secret"=>"e2c43ddc9b", "server"=>"7639", "farm"=>"8", "title"=>"Yes! Mural @ DUMBO, Brooklyn, NYC", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233209812", "owner"=>"26401289@N04", "secret"=>"02466c75a0", "server"=>"5327", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 10:49:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047351390", "owner"=>"62991404@N06", "secret"=>"80c9cdbda0", "server"=>"7592", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 09:44:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17048715419", "owner"=>"26401289@N04", "secret"=>"783e64e876", "server"=>"7724", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:44:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234319291", "owner"=>"130073819@N06", "secret"=>"ef1671d080", "server"=>"7629", "farm"=>"8", "title"=>"Clwar Your Mind #newyork #river", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047085268", "owner"=>"62991404@N06", "secret"=>"84ec50ed0d", "server"=>"7646", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 09:39:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233114912", "owner"=>"79981338@N07", "secret"=>"d0067978bf", "server"=>"7683", "farm"=>"8", "title"=>"Washington Square Park", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027420007", "owner"=>"131752492@N06", "secret"=>"7b0b4fc3ca", "server"=>"7649", "farm"=>"8", "title"=>"John Travolta And Kelly Preston Step Out With Benjamin!", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17234844705", "owner"=>"26401289@N04", "secret"=>"f8bfab409d", "server"=>"8811", "farm"=>"9", "title"=>"Record by Always E-mail, 2015-04-22 10:39:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17208880236", "owner"=>"40697502@N07", "secret"=>"2897ac2bf0", "server"=>"7594", "farm"=>"8", "title"=>"Reclaimed: Beaver Street", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"16614609683", "owner"=>"114088704@N04", "secret"=>"25be527b77", "server"=>"8756", "farm"=>"9", "title"=>"Alex O'Loughlin", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17027373047", "owner"=>"62991404@N06", "secret"=>"0ae9065998", "server"=>"5450", "farm"=>"6", "title"=>"Record by Always E-mail, 2015-04-22 09:34:59", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17047252590", "owner"=>"26401289@N04", "secret"=>"4ce0c1c8c4", "server"=>"7647", "farm"=>"8", "title"=>"Record by Always E-mail, 2015-04-22 10:34:35", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}, {"id"=>"17233044172", "owner"=>"45676023@N06", "secret"=>"5a6ba446ff", "server"=>"8745", "farm"=>"9", "title"=>"CentralPark2015-4(NYC)", "ispublic"=>"1", "isfriend"=>"0", "isfamily"=>"0"}]):
+  app/controllers/welcome_controller.rb:13:in `search'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (35.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (70.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 12:10:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:10:32 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (517.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (115.4ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:10:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (116.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:10:36 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+Completed 500 Internal Server Error in 583ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `gsub' for #<Array:0x007fa5cf8b1150>):
+  app/controllers/welcome_controller.rb:13:in `search'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 12:11:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:11:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (133.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (100.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:11:27 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+Completed 500 Internal Server Error in 610ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `gsub' for #<Array:0x007fa5cd4fed98>):
+  app/controllers/welcome_controller.rb:13:in `search'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (136.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:11:42 -0400
+
+SyntaxError (/Users/haleighharper/ga/in-class/w06/project2_api_usatoday/app/controllers/welcome_controller.rb:13: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/welcome_controller.rb:13: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (159.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:11:54 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 539ms (Views: 70.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-22 12:11:55 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-22 12:11:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-22 12:11:55 -0400
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:11:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (133.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (60.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (175.5ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-22 12:11:56 -0400
+
+
+Started GET "/assets/application.self-8ec512180fb08ebfa5515b95a518a28021dbcd31beb82479daa5b63e01163dbe.css?body=1" for ::1 at 2015-04-22 12:11:56 -0400
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:11:56 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (10.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (78.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (2.0ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (203.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 12:18:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 97ms (Views: 87.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-22 12:18:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:18:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (279.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (42.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (44.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (246.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (578.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=newyork&commit=Search" for ::1 at 2015-04-22 12:18:58 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"newyork", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 581ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:18:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (400.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (273.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (405.2ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:19:00 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (88.2ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (176.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search=new+york&commit=Search" for ::1 at 2015-04-22 12:19:04 -0400
+Processing by WelcomeController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"new york", "commit"=>"Search"}
+  Rendered welcome/search.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 631ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/Geopic_logo.png" for ::1 at 2015-04-22 12:19:05 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Geopic_logo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/haleighharper/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (211.7ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (81.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (8.5ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/haleighharper/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (168.5ms)
