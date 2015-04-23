@@ -74,8 +74,9 @@ a:hover {
 
 a.photoSearch {
 	margin: 10px;
-	border: 2px solid cyan;
-	box-shadow: 5px 5px 5px #330014;
+	border: 2px solid #FF0066;
+	box-shadow: 4px 4px 15px #0099FF;
+
 }
 
 h1 {
@@ -153,7 +154,6 @@ body.welcome:after {
 	clear: both;
 }
 
-
 .markerPng {
 	height: 300px;
 	widows: 300px;
@@ -174,4 +174,29 @@ body.welcome:after {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.markerPng {
+	margin: 50px 50px 0 20px;
+}
+
+.searchBoxHome {
+	text-align: center;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+	background-color: grey;
+	color: white;
+	box-shadow: inset 3px 3px 3px black;
+	border: 2px solid black;
+	background: -webkit-linear-gradient(#FF0066, #3366CC); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#FF0066, #3366CC); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#FF0066, #3366CC); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#FF0066, #3366CC); /* Standard syntax */
+  	outline: 0;
+}
+
+.buttonHome {
+	background-color: #FF0066;
+	width: 120px;
 }
