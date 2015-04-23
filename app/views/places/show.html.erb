@@ -3,9 +3,7 @@
 <h2><%= @place.location.split.map(&:capitalize).join(' ') %></h2>
 
 <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@place.location}&zoom=14&size=400x400"%>
-
-
-<br>
+<a href="/search?utf8=✓&search=<%= @place.location.gsub(/\s/,'+') %>&commit=Search"><h3>View Photos For This Place</h3></a>
 
 <%= link_to "Edit Location", edit_place_path(@place) %>
 <br>
@@ -13,6 +11,3 @@
 
 <br>
 <%= link_to "Go Back", :back %>
-
-
-<a href="/search?utf8=✓&search=<%= @place.location.gsub(/\s/,'+') %>&commit=Search"><h3>View Photos For This Place:</h3></a>
