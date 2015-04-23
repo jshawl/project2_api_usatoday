@@ -14,8 +14,7 @@
  *= require_self
  */
 
-@import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
-@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
 html {
@@ -25,14 +24,15 @@ html {
 }
 
 body {
+	background-image: url('/images/dc_map_bg.png');
 	color: white;
-	font-family: 'Crafty Girls', cursive;
+	text-shadow: 2px 2px 5px black;
+	font-family: 'Lato', sans-serif;
 	position: relative;
 	width: 1000px;
 	min-height: 500px;
-	height: 100%;
 	margin: 0 auto;
-	
+	background-color: grey;
 	box-shadow: 0 0 35px 15px #330014;
 }
 
@@ -44,6 +44,10 @@ header {
   	background: -moz-linear-gradient(#FF0066, #800033); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(#FF0066, #800033); /* Standard syntax */
 	border-bottom: 2px solid black;
+}
+
+nav {
+	padding-top: 10px;
 }
 
 ul {
@@ -58,16 +62,14 @@ li {
 	font-size: 25px;
 }
 
-nav {
-
-	color: white;
-
+a {
+	text-decoration: none;
+	color: #00FFFF;
+	text-shadow: 2px 2px 5px black;
 }
 
-a {
-	color: #00FFFF;
-	font-family: 'Indie Flower', cursive;
-	text-decoration: none;
+a:hover {
+	text-shadow: 1px 1px 2px black, 0 0 25px #FF0066, 0 0 5px #800033;
 }
 
 h1 {
@@ -105,12 +107,10 @@ h2 {
 	width: 70px;
 	height: 30px;
 	font-size: 16px;
+	color: white;
 	border: none;
 }
 
-.user_login a {
-
-}
 
 .logoHome {
 
@@ -121,8 +121,7 @@ h2 {
 
 .welcomePage {
 	margin: 50px;
-	
-	font-family: 'Lato', sans-serif;
+
 }
 
 .welcomePage:after {
@@ -131,16 +130,24 @@ h2 {
 	clear: both;
 }
 
-.welcome {
-	background-image: url('/images/dc_map_bg.png');
-	 min-height: 100%;
 
-	
-  height: auto;
-	
-  /* Set up positioning */
+body.welcome {
+	background-image: url('/images/dc_map_bg.png');
+	min-height: 100%;
+  	min-width: 1024px;
 
 }
+
+body.welcome:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.places {
+
+}
+
 
 
 .markerPng {
