@@ -79,13 +79,20 @@ a.photoSearch {
 
 }
 
+a.photoSearch:hover {
+	border: 2px solid #0099FF;	
+	box-shadow: 4px 4px 15px #FF0066;
+}
+
 h1 {
 	font-size: 150px;
 	margin: 0 auto;
+	font-weight: bold;
 }
 
-h2 {
-	font-size: 30px;
+h3 {
+	font-weight: lighter;
+	font-size: 80px;
 	margin: 0 auto;
 }
 
@@ -119,7 +126,11 @@ h2 {
 }
 
 .favoriteBtn {
-	color: pink;
+	color: white;
+	background-color: #FF0066;
+	font-size: 20px;
+	border-radius: 10px;
+	font-weight: lighter;
 }
 
 .logoHome {
@@ -162,22 +173,27 @@ body.welcome:after {
 
 .welcomeBg {
 	background-image: url('/images/dc_map_bg.png');
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+		
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+		
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	text-shadow: none;
+	text-align: center;
+	font-size: 20px;
 }
 
 .markerPng {
 	margin: 50px 50px 0 20px;
+
 }
 
 .searchBoxHome {
@@ -189,14 +205,26 @@ body.welcome:after {
 	color: white;
 	box-shadow: inset 3px 3px 3px black;
 	border: 2px solid black;
-	background: -webkit-linear-gradient(#FF0066, #3366CC); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#FF0066, #3366CC); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#FF0066, #3366CC); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#FF0066, #3366CC); /* Standard syntax */
+	background: #FF0066;
   	outline: 0;
 }
 
+
 .buttonHome {
 	background-color: #FF0066;
+	height: 30px;
 	width: 120px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.buttonHome:hover {
+	background-color: #0099FF;
+}
+
+.searchDiv {
+	margin: auto auto atuo 500px;
 }
