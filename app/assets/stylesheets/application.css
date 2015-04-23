@@ -72,6 +72,12 @@ a:hover {
 	text-shadow: 1px 1px 2px black, 0 0 25px #FF0066, 0 0 5px #800033;
 }
 
+a.photoSearch {
+	margin: 10px;
+	border: 2px solid cyan;
+	box-shadow: 5px 5px 5px #330014;
+}
+
 h1 {
 	font-size: 150px;
 	margin: 0 auto;
@@ -111,6 +117,9 @@ h2 {
 	border: none;
 }
 
+.favoriteBtn {
+	color: pink;
+}
 
 .logoHome {
 
@@ -144,14 +153,25 @@ body.welcome:after {
 	clear: both;
 }
 
-.places {
-
-}
-
-
 
 .markerPng {
 	height: 300px;
 	widows: 300px;
 	float: left;
+}
+
+.welcomeBg {
+	background-image: url('/images/dc_map_bg.png');
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
