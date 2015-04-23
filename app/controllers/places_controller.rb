@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @places = Place.all
+   @places = Places.all
   end
 
   def show
@@ -11,6 +11,7 @@ class PlacesController < ApplicationController
 
   def create
     @place = Place.create(:location => params[:search])
+    redirect_to(:back)
   end
 
   def edit
@@ -30,7 +31,7 @@ class PlacesController < ApplicationController
   def destroy
     @place = Place.find(params[:id])
     @place.destroy
-    redirect_to places_path
+    redirect_to ("/users/show")
   end
 
   private
