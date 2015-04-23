@@ -2,6 +2,8 @@
 
 <h2><%= @place.location.split.map(&:capitalize).join(' ') %></h2>
 
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@place.location}&zoom=14&size=400x400"%>
+
 
 <br>
 
@@ -14,6 +16,3 @@
 
 
 <a href="/search?utf8=✓&search=<%= @place.location.gsub(/\s/,'+') %>&commit=Search"><h3>View Photos For This Place:</h3></a>
-
-
-<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@place.location}&zoom=13&size=600x300&key=AIzaSyBg1x1eEZfouid3oD2nZ4d9WdZhXth-AT0"%>
