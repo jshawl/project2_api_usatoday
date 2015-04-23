@@ -18,7 +18,7 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 html {
-	background-image: url("http://wallpapers55.com/wp-content/uploads/2013/11/Map-Background-Wallpaper.jpg");
+	background-image: url('/images/Map-Background-Wallpaper.png');
 	height: 100%;
 	width: 100%;
 }
@@ -28,6 +28,7 @@ body {
 	font-family: 'Crafty Girls', cursive;
 	position: relative;
 	width: 1000px;
+	min-height: 500px;
 	height: 100%;
 	margin: 0 auto;
 	background-color: grey;
@@ -104,5 +105,9 @@ a {
 
 	float: left;
 	margin: 0 20px;
-	height: 50px;
+	height: 60px;
+}
+
+.welcomePage {
+	margin: 100px;
 }
