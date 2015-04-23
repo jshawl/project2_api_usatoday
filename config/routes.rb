@@ -5,12 +5,17 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  
+
   root 'welcome#index'
+
+  get '/profiles/edit', to: 'profiles#edit'
 
   resources :places
   resources :photos
   resources :users
+  resources :profiles
+
+
 
   get '/search', to: 'welcome#search'
 
