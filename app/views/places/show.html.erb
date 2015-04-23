@@ -5,11 +5,11 @@
 
 <br>
 
-<%= link_to "Change Location", edit_place_path(@place) %>
+<%= link_to "Edit Location", edit_place_path(@place) %>
 <br>
 <%= link_to "Delete From Favorites", place_path(@place), method: :delete, confirm: true%>
 
 <br>
 <%= link_to "My Favorite Locations", places_path %>
 
-<h3>View Photos For This Place:</h3>
+<a href="/search?utf8=✓&search=<%= @place.location.gsub(/\s/,'+') %>&commit=Search"><h3>View Photos For This Place:</h3></a>
