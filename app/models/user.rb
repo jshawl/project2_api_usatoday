@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :places
-  belongs_to :profile, dependent: :destroy
+  has_one :profile, dependent: :destroy
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
