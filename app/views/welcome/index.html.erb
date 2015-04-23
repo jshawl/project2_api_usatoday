@@ -1,11 +1,14 @@
-<div class="welcomePage"> 
-<h2>Welcome to Geo.Pic!</h2>
+<div class="welcomeBg">
+	<div class="welcomePage"> 
+		<h2>Welcome to</h2> <h1>Geo.Pic!</h1>
 
-<p>Search through any location, country or city, visually, without having to be there. Save your favorite locations and plan your trips around what you want to see!</p>
-<p>
-  <%= form_tag '/search', method: :get do %>
-    <%= text_field_tag :search, nil, :placeholder => "ex: Austin Texas", :class => 'searchBox' %>
-    <%= submit_tag 'Search', class: 'button' %>
-  <% end %>
-</p>
+		<p>Search through any location, country or city, visually, without having to be there. Save your favorite locations and plan your trips around what you want to see!</p>
+		<p>
+		<%= link_to image_tag("logoexport-01_1024.png", :class => "markerPng") %>
+		  <%= form_tag '/search', method: :get do %>
+		    <%= text_field_tag :search, nil, :placeholder => "ex: Austin Texas", :class => 'searchBox' %>
+		    <%= submit_tag 'Search', class: 'button' %>
+		  <% end %>
+		</p>
+	</div>
 </div>

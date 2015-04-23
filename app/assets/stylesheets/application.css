@@ -16,6 +16,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 html {
 	background-image: url('/images/Map-Background-Wallpaper.png');
@@ -31,7 +32,7 @@ body {
 	min-height: 500px;
 	height: 100%;
 	margin: 0 auto;
-	background-color: grey;
+	
 	box-shadow: 0 0 35px 15px #330014;
 }
 
@@ -67,6 +68,16 @@ a {
 	color: #00FFFF;
 	font-family: 'Indie Flower', cursive;
 	text-decoration: none;
+}
+
+h1 {
+	font-size: 150px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 auto;
 }
 
 .content {
@@ -109,5 +120,31 @@ a {
 }
 
 .welcomePage {
-	margin: 100px;
+	margin: 50px;
+	
+	font-family: 'Lato', sans-serif;
+}
+
+.welcomePage:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+.welcome {
+	background-image: url('/images/dc_map_bg.png');
+	 min-height: 100%;
+
+	
+  height: auto;
+	
+  /* Set up positioning */
+
+}
+
+
+.markerPng {
+	height: 300px;
+	widows: 300px;
+	float: left;
 }

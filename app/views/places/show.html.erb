@@ -2,6 +2,8 @@
 
 <h2><%= @place.location.split.map(&:capitalize).join(' ') %></h2>
 
+<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@place.location}&zoom=14&size=400x400"%>
+
 
 <br>
 
