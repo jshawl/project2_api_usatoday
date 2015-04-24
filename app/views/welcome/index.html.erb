@@ -1,4 +1,16 @@
 <div class="welcomeBg">
+	<div class="welcomeNav">
+		<ul>
+			<li><a href="/users/show" class="welcome_profile">Profile</a></li>
+            <li><span class='welcome_user_login'>
+            <% if current_user %>
+            <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+            <% else %>
+            <a href='/users/sign_in'>Sign In</a>
+            <% end %></span></li>
+        </ul>
+    </div>
+
 	<div class="welcomePage">
 		<%= link_to image_tag("logoexport-01_1024.png", :class => "markerPng") %>
 		<div><h3>Welcome to</h3> <h1>Geo.Pic</h1></div>
@@ -11,7 +23,9 @@
 		    <%= text_field_tag :search, nil, :placeholder => "ex: Austin Texas", :class => 'searchBoxHome' %>
 		    <%= submit_tag 'Search', class: 'buttonHome' %>
 		  <% end %>
-		 </div>
+
+		 </div>     
+            
 		</p>
 	</div>
 </div>

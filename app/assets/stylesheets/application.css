@@ -228,3 +228,9 @@ body.welcome:after {
 .searchDiv {
 	margin: auto auto atuo 500px;
 }
+
+.welcomeNav {
+	margin-right: 50px;
+	margin-top: 20px;
+	float: right;
+}
