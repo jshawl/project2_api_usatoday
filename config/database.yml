@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: geo_pic_production
-  username: geo_pic
-  password: <%= ENV['GEO_PIC_DATABASE_PASSWORD'] %>
