@@ -1,7 +1,7 @@
 <h2>Make Profile</h2>
 
 <p>
-<%= form_for @profile do |f| %>
+<%= form_for @profile, url: {action: "create"} do |f| %>
   <%= f.label :name %><br>
   <%= f.text_field :name %>
   <br><br>
