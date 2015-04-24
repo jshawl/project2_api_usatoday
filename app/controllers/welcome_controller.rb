@@ -18,6 +18,7 @@ class WelcomeController < ApplicationController
       render :search
     else
       redirect_to :back, notice: "Must provide a search term"
+      
     end
   end
 end
