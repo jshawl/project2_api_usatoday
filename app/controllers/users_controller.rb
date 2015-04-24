@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     @places = Place.all
     @profile = current_user.profile
     # @profile = Profile.find_by(params[:current_user])
-    # @profile = current_user.profile
   end
 
   def create

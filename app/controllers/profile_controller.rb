@@ -17,6 +17,7 @@ class ProfileController < ApplicationController
   def update
     # @profile = current_user.profile.update(profile_params)
     @profile = current_user.profile.update_attributes(profile_params)
+    redirect_to("/users/show")
   end
 
   private
