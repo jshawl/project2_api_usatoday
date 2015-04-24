@@ -10,10 +10,19 @@ You can view our User Stories here: https://trello.com/b/ZaDSf9T6/geo-pic
 
 To get this app up and running on your localhost, follow these intrucstions:
 
-1. rails new geo_pic -d postgresql
-2. rake db:create
+In Git:
+1. fork this repo on GitHub and clone to your local repo
+
+In the terminal:
+
+2. bundle install
+3. rake db:create
 3. rake db:migrate
-4. rails s [to run your server]
-5. go to localhost:3000 and enjoy GeoPic!
+4. rake db:seed
+5. rails s [to run your server]
+
+In your browser:
+
+6. go to localhost:3000 and enjoy GeoPic!
 
 
