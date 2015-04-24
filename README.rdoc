@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello and welcome to GeoPic! We have listed several resources below to get you started with our app.
 
-Things you may want to cover:
+To use our app, visit our Heroku page here: https://geo-pic.herokuapp.com/
 
-* Ruby version
+You can view our ERDs here: https://files.slack.com/files-pri/T04E0TP3N-F04HY8P0D/geopic_erb_-_erd.png
 
-* System dependencies
+You can view our User Stories here: https://trello.com/b/ZaDSf9T6/geo-pic
 
-* Configuration
+To get this app up and running on your localhost, follow these intrucstions:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. rails new geo_pic -d postgresql
+2. rake db:create
+3. rake db:migrate
+4. rails s [to run your server]
+5. go to localhost:3000 and enjoy GeoPic!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
