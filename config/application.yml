@@ -10,3 +10,5 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 secret_key: "04984bb3307b34805b31d3230a5c5b31"
+# please revoke this key as soon as possible.
+# This file should be in your .gitignore file.

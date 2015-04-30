@@ -2,6 +2,7 @@
 
 <p>
 <%= form_for @profile, url: {action: "create"} do |f| %>
+  <!-- is it necessary to specify the action above? -->
   <%= f.label :name %><br>
   <%= f.text_field :name %>
   <br><br>

@@ -32,12 +32,13 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
     @place.destroy
     redirect_to ("/users/show")
+    # see users#show for comment
   end
 
   private
 
   def place_params
         params.require(:place).permit(:location)
-      end
+  end
 
 end
